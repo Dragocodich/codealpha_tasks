@@ -1,12 +1,8 @@
-# Outout of the Model.
+# Output of the Model.
 
-#### I used built in dataset for this problem.
+## CREDITWORTHINESS PREDICTION - CODEALPHA ML TASK
 
-============================================================
-CREDITWORTHINESS PREDICTION - CODEALPHA ML TASK
-============================================================
-
-[1] Loading German Credit dataset...
+#### [1] Loading German Credit dataset:
 Dataset shape: (1000, 21)
 
 Features (20):
@@ -28,7 +24,7 @@ First 5 rows:
 
 [5 rows x 21 columns]
 
-[2] Feature Engineering & Preprocessing...
+#### [2] Feature Engineering & Preprocessing:
 Numeric features (7): ['duration', 'credit_amount', 'installment_commitment', 'residence_since', 'age', 'existing_credits', 'num_dependents']
 Categorical features (13): ['checking_status', 'credit_history', 'purpose', 'savings_status', 'employment', 'personal_status', 'other_parties', 'property_magnitude', 'other_payment_plans', 'housing', 'job', 'own_telephone', 'foreign_worker']
 No missing values found.
@@ -40,15 +36,14 @@ Creating derived features...
 
 Final feature matrix: (1000, 24)
 
-[3] Train/Test Split & Scaling...
+#### [3] Train/Test Split & Scaling:
 Train: (750, 24), Test: (250, 24)
 
-[4] Training & Evaluating Models...
-============================================================
+#### [4] Training & Evaluating Models...
 
-──────────────────────────────────────────────────
-  Logistic Regression
-──────────────────────────────────────────────────
+
+## Logistic Regression
+  
   Accuracy : 0.7120
   Precision: 0.7537
   Recall   : 0.8743
@@ -67,9 +62,9 @@ weighted avg       0.69      0.71      0.69       250
 
   CV ROC-AUC (5-fold): 0.7195 (+/- 0.0478)
 
-──────────────────────────────────────────────────
-  Decision Tree
-──────────────────────────────────────────────────
+
+## Decision Tree
+
   Accuracy : 0.7040
   Precision: 0.7953
   Recall   : 0.7771
@@ -88,9 +83,9 @@ weighted avg       0.71      0.70      0.71       250
 
   CV ROC-AUC (5-fold): 0.6647 (+/- 0.0355)
 
-──────────────────────────────────────────────────
-  Random Forest
-──────────────────────────────────────────────────
+
+## Random Forest
+
   Accuracy : 0.7680
   Precision: 0.7773
   Recall   : 0.9371
@@ -109,17 +104,17 @@ weighted avg       0.76      0.77      0.74       250
 
   CV ROC-AUC (5-fold): 0.7762 (+/- 0.0453)
 
-============================================================
-  MODEL COMPARISON SUMMARY
-============================================================
+
+## MODEL COMPARISON SUMMARY
+
               Model  Accuracy  Precision  Recall  F1-Score  ROC-AUC
 Logistic Regression     0.712     0.7537  0.8743    0.8095   0.7579
       Decision Tree     0.704     0.7953  0.7771    0.7861   0.6642
       Random Forest     0.768     0.7773  0.9371    0.8497   0.7843
 
-──────────────────────────────────────────────────
-  Top 10 Feature Importances (Random Forest)
-──────────────────────────────────────────────────
+
+### Top 10 Feature Importances (Random Forest)
+
   1. checking_status                0.1102
   2. monthly_payment                0.1018
   3. credit_amount                  0.1002
@@ -131,6 +126,6 @@ Logistic Regression     0.712     0.7537  0.8743    0.8095   0.7579
   9. savings_status                 0.0309
   10. property_magnitude             0.0287
 
-============================================================
-  TASK COMPLETED SUCCESSFULLY
-============================================================
+
+### TASK COMPLETED SUCCESSFULLY
+
